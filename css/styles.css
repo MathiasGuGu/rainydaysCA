@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+	--navbar-light-blue: #e6ebed;
+	--dark-green: #005e62;
+	--dark-blue: #0a3641;
+	--light-blue: #96afb8;
+	--vipps-orange: #ed8b44;
+	--notif-red: #d1495b;
+	--success-green: #6fbd63;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Bebas Neue', cursive;
+}
+
+.navbar-container {
+	width: 100vw;
+	height: 65px;
+	background-color: var(--navbar-light-blue);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.navbar-hamburger {
+	height: 60%;
+	aspect-ratio: 1 / 1;
+	background-color: var(--vipps-orange);
+
+	display: none;
+}
+.navbar-buttons {
+	width: calc(100% / 2);
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	list-style: none;
+}
+
+.navbar-button {
+	height: 100%;
+	width: calc(100% / 4);
+
+	position: relative;
+}
+.navbar-button::before {
+	content: '';
+	position: absolute;
+}
+
+.navbar-button:hover::before {
+	content: '';
+	position: absolute;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	background-color: #00000010;
+
+	animation: animateIn 0.4s cubic-bezier(0.7, 0.04, 0.95, 0.89) forwards;
+}
+
+.navbar-button-text {
+	color: var(--dark-blue);
+	text-decoration: none;
+	font-size: 1.2rem;
+	height: 100%;
+	width: 100%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+[data-active]::after {
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 3px;
+	background-color: var(--dark-blue);
+}
+
+@media screen and (max-width: 740px) {
+	.navbar-buttons {
+		display: none;
+	}
+	.navbar-hamburger {
+		display: flex;
+	}
+}
+
+@keyframes animateIn {
+	from {
+		width: 0%;
+	}
+	to {
+		width: 100%;
+		height: 100%;
+	}
+}
