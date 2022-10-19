@@ -281,7 +281,6 @@ body {
 	width: 100%;
 	height: 60%;
 	background-color: var(--vipps-orange);
-	overflow: scroll;
 }
 
 .product-card {
@@ -290,6 +289,8 @@ body {
 
 	background-color: #fff;
 
+	text-decoration: none;
+	color: var(--dark-blue);
 
 	display: flex;
 	flex-direction: column;
