@@ -423,18 +423,20 @@ body {
 	gap: 10px;
 }
 .jacket-jackets-list {
-	width: 70%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 5px;
+	grid-row-gap: 7px;
+
+	width: 100%;
 	background-color: white;
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 10px;
 }
 
 
 .jacket-jacket-card-container {
-	width: calc(100% / 3 - 20px);
-	margin: 1em 0;
-	height: 350px;
-	background-color: aliceblue;
+	background-color: var(--vipps-orange);
+	border: 1px solid black;
+	height: 450px;
+	max-width: 350px;
 }
