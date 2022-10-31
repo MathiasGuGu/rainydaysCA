@@ -108,7 +108,7 @@ body {
 	position: absolute;
 	bottom: 0px;
 	width: 100%;
-	height: 3px;
+	height: 2px;
 	background-color: var(--dark-blue);
 }
 
@@ -147,7 +147,7 @@ body {
 
 
 #header-image-container {
-	height: auto;
+	height: 500px;
 	max-height: 450px;
 
 	display: flex;
@@ -156,80 +156,20 @@ body {
 	position: relative;
 }
 
-.header-image-shader{
-	height: 450px;
-	width: 100%;
-	max-width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	
-}
-.image-shader {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: 2;
-	top: 0%;
-	left: 0%;
-	background: rgb(0,0,0);
-	background: linear-gradient(0deg, rgba(255,255,255,0.35) 55%, rgba(255,255,255,0.6) 100%);
-}
 
-.header-image {
-	object-fit: fill;	
-	width: 100vw;
-	height: 100%;
-	top: 0%;
-	left: 0%;
-}
 
-.header-image-text-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-end;
-	z-index: 3;
-	width: 100%;
-	height: 100%;
 
-}
-.header-image-text {
-	color: var(--dark-blue);
-	margin-bottom: 5rem;
-}
-
-.header-image-carousel {
-	width: 30%;
-	height: 20%;
-	display: flex;
-	flex: row;
-	align-items: center;
-	justify-content: space-evenly;
-}
-
-.carousel-circle {
-	background-color: var(--navbar-light-blue);
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-}
-.carousel-circle[data-checked] {
-	background-color: var(--dark-blue);
-}
 
 .content-section {
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
 }
 
 .sales-header {
 	max-width: 100vw;
 	width: 100vw;
 	height: 300px;
-	background-color: var(--dark-green);
-
+	background-color:#f89b58;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -265,20 +205,21 @@ body {
 
 .selection-list {
 	max-width: 100vw;
-	height: 700px;
+	height: 600px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-}
 
+	background-color: #ed8b44;
+}
 .selection-title {
 	display: flex;
 	width: 100%;
 }
 
 .selection-card-container {
-	width: 200px;
+	width: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -296,7 +237,7 @@ body {
 
 
 .card-image-container {
-	width: 200px;
+	width: 250px;
 	height: 300px;
 	background-color: white;
 
