@@ -273,3 +273,32 @@ body {
 	height: 100px;
 	width: 250px;
 }
+
+
+
+
+
+
+/* Footer section */
+
+.footer-container {
+	height: 400px;
+	width: 100vw;
+
+	background-color: var(--dark-blue);
+
+	display: flex;
+	color: white;
+}
+
+.footer-help {
+	width: 33%;
+}
+
+.footer-about {
+	width: 33%;
+}
+
+.footer-payment {
+	width: 33%;
+}
