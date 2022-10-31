@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');:root {
 	--navbar-light-blue: #ffffff;
 	--dark-green: #005e62;
 	--dark-blue: #0a3641;
@@ -8,6 +7,7 @@
 	--vipps-orange: #ed8b44;
 	--notif-red: #d1495b;
 	--success-green: #6fbd63;
+	--font-read: 'Montserrat', sans-serif
 }
 
 
@@ -207,44 +207,60 @@ body {
 	max-width: 100vw;
 	height: 600px;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
 	background-color: #ed8b44;
-}
-.selection-title {
-	display: flex;
-	width: 100%;
 }
 
 .selection-card-container {
-	width: 250px;
+
+	width: 100%;
+	height: 100%;
+
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black
+	gap: 10px;
+
+	overflow-x: hidden;
+
+	border: 1px solid black;
 }
 
-.product-card {
+.card-container {
+	width: 250px;
+	font-family: var(--font-read);
+}
 
+.image-container {
+	background-color: white;
+	width: 100%;
+	height: 300px;
 
+	border-radius: 4px;
 }
 
 .product-card:hover {
 
 }
 
-
-.card-image-container {
+.card-info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100px;
 	width: 250px;
-	height: 300px;
-	background-color: white;
-
-	border: 1px solid black;
 }
+
+
+
 
 .card-image {
 	height: 65%;
 	width: 85%;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background-color: white;
 }
