@@ -99,6 +99,8 @@ body {
 	width: 0px;
 	height: 100%;
 	transition: all 0.3s linear;
+	background-color: #00000010;
+
 }
 
 .navbar-button:hover::before {
@@ -221,14 +223,12 @@ body {
 
 /* jacket selection section */
 
-.background-collision {
-	margin-top: 150px;
 
-}
 
 .selection-list {
 	width: 100vw;
 	padding: 25px;
+	margin-bottom: 150px;
 }
 
 .selection-card-container {
