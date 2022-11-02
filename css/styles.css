@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');:root {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,100&display=swap');
+:root {
 	--navbar-light-blue: #ffffff;
 	--dark-green: #005e62;
 	--dark-blue: #0a3641;
@@ -7,9 +8,8 @@
 	--vipps-orange: #ed8b44;
 	--notif-red: #d1495b;
 	--success-green: #6fbd63;
-	--font-read: 'Montserrat', sans-serif
+	--font-read: 'Montserrat', sans-serif;
 }
-
 
 .red {
 	background-color: var(--notif-red);
@@ -29,14 +29,25 @@ body {
 	font-family: 'Bebas Neue', cursive;
 }
 
+.flex-col {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.flex-row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
 
 .navbar-container {
 	max-width: 100vw;
 	height: 65px;
 	background-color: var(--navbar-light-blue);
 	box-shadow: 1px 1px 15px 1px #00000015;
-	display: flex;
-	align-items: center;
+
 	justify-content: space-around;
 }
 
@@ -62,8 +73,7 @@ body {
 	width: calc(100% / 2);
 	max-width: 600px;
 	height: 100%;
-	display: flex;
-	align-items: center;
+
 	justify-content: space-between;
 	margin: 0%;
 	list-style: none;
@@ -97,10 +107,6 @@ body {
 	font-size: 1.2rem;
 	height: 100%;
 	width: 100%;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 [data-active]::after {
@@ -113,26 +119,23 @@ body {
 }
 
 @media screen and (max-width: 740px) {
-
 	.navbar-container {
 		display: none;
 	}
 	.navbar-mobile {
 		display: flex;
 	}
-	.navbar-mobile-icons { 
+	.navbar-mobile-icons {
 		display: flex;
 	}
-
 
 	.navbar-buttons {
 		max-width: 100vw;
 
 		background-color: var(--vipps-orange);
-		height:50%;
+		height: 50%;
 		width: 100%;
 	}
-
 }
 
 @keyframes animateIn {
@@ -145,20 +148,12 @@ body {
 	}
 }
 
-
 #header-image-container {
 	height: 500px;
 	max-height: 450px;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	position: relative;
 }
-
-
-
-
 
 .content-section {
 	display: flex;
@@ -169,11 +164,7 @@ body {
 	max-width: 100vw;
 	width: 100vw;
 	height: 300px;
-	background-color:#f89b58;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	background-color: #f89b58;
 
 	color: white;
 }
@@ -181,9 +172,7 @@ body {
 .redirect-button {
 	width: 20%;
 	height: 15%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+
 	background-color: var(--light-blue);
 
 	border: none;
@@ -194,7 +183,6 @@ body {
 	color: var(--dark-blue);
 	box-shadow: 3px 3px 10px 1px #00000025;
 	transition: all 0.2s linear;
-
 }
 
 .redirect-button:hover {
@@ -203,30 +191,23 @@ body {
 	transition: all 0.2s linear;
 }
 
-
 /* jacket selection section */
 
 .selection-list {
-	max-width: 100vw;
+	width: 100vw;
 	min-height: 500px;
 	height: auto;
-	justify-content: center;
-	align-items: center;
+
 	background-color: #ed8b44;
 }
 
 .selection-card-container {
 	width: 100%;
 	min-height: 600px;
-	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
 	gap: 10px;
 
 	overflow-x: hidden;
-
 }
 
 .card-container {
@@ -240,16 +221,12 @@ body {
 	height: 50px;
 	border: 1px solid var(--notif-reds);
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	position: absolute;
 	top: 10px;
 	left: 10px;
 
 	z-index: 3;
-	
+
 	box-shadow: 1px 1px 15px 1px #00000015;
 }
 
@@ -257,10 +234,6 @@ body {
 	background-color: white;
 	width: 100%;
 	height: 300px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .image-container-image {
@@ -271,23 +244,14 @@ body {
 	border-radius: 4px;
 }
 .card-info-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	align-items: flex-start;
 	height: 100px;
 	width: 250px;
 }
 
-
-
 /* go to top button */
 /* pga ingen JS så er den alltid synlig */
 .go-to-top-btn {
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
 	background-color: var(--navbar-light-blue);
 	width: 100px;
 	height: 40px;
@@ -299,7 +263,6 @@ body {
 	color: #0a3641;
 	font-size: large;
 	transition: all 0.2s;
-
 }
 .go-to-top-btn:hover {
 	scale: 1.03;
@@ -313,33 +276,19 @@ body {
 	width: 100vw;
 
 	background-color: var(--dark-blue);
-
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
 }
-
 
 .footer-container-info {
 	height: 400px;
 	max-width: 1100px;
 	width: 100vw;
 
-
-	display: flex;
-
-	justify-content: center;
-
 	color: white;
 }
 
 .footer-box {
 	width: 33%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
+	justify-content: baseline;
 	font-family: var(--font-read);
 	font-size: small;
 	font-weight: 100;
@@ -359,26 +308,19 @@ body {
 }
 
 .footer-info-list {
-	list-style:square;
+	list-style: square;
 	font-size: medium;
-	display: flex;
-	flex-direction: column;
+	align-items: flex-start;
 	gap: 10px;
 }
 
 .footer-contact-info {
-	display: flex;
-
-	align-items: center;
-	justify-content: center;
 	gap: 50px;
 	width: 100%;
 	height: 50%;
 
 	color: white;
 }
-
-
 
 /* Jackets page */
 
@@ -389,8 +331,6 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-
-
 
 .jacket-sale-container {
 	max-width: 100vw;
@@ -417,7 +357,6 @@ body {
 	min-height: 400px;
 	background-color: #96afb8;
 
-
 	display: flex;
 	justify-content: center;
 	gap: 10px;
@@ -432,7 +371,6 @@ body {
 	width: 100%;
 	background-color: white;
 }
-
 
 .jacket-jacket-card-container {
 	background-color: var(--vipps-orange);
