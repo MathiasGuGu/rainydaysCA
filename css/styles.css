@@ -67,6 +67,8 @@ body {
 	height: 80%;
 }
 
+
+
 .navbar-mobile {
 	width: 100vw;
 	height: 95px;
@@ -81,6 +83,7 @@ body {
 	display: none;
 	align-items: center;
 	justify-content: center;
+
 }
 
 .navbar-buttons {
@@ -153,8 +156,12 @@ body {
 	.navbar-buttons {
 		max-width: 100vw;
 		background-color: var(--vipps-orange);
-		height: 50%;
+		height: 60%;
 		width: 100%;
+	}
+	.navbar-cart {
+		position: absolute;
+		right: 40px;
 	}
 }
 
