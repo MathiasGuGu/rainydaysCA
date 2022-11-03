@@ -58,6 +58,15 @@ body {
 	justify-content: space-around;
 }
 
+.navbar-logo {
+	width: fit-content;
+	height: 100%;
+}
+
+.navbar-logo > img {
+	height: 80%;
+}
+
 .navbar-mobile {
 	width: 100vw;
 	height: 95px;
