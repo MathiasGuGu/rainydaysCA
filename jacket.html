@@ -9,33 +9,85 @@
   </head>
 
   <body>
-    <header>
-      
+    <header id="top">
+      <nav class="navbar-container flex-row">
+        <div class="navbar-logo flex-row">
+          <img src="./public/RainyDays_Logo.png" alt="Rainydays logo" />
+        </div>
+
+        <ul class="navbar-buttons flex-row">
+          <li class="navbar-button" data-active>
+            <a class="navbar-button-text flex-row" href="/">Home</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/jackets.html"
+              >Jackets</a
+            >
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/about.html">About</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="navbar-cart"><i class="fa-solid fa-cart-shopping"></i></div>
+      </nav>
+      <nav class="navbar-mobile flex-row">
+        <div class="navbar-mobile-icons">
+          <div class="navbar-logo flex-row">
+            <img src="./public/RainyDays_Logo.png" alt="" />
+          </div>
+          <div class="navbar-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+        </div>
+        <ul class="navbar-buttons flex-row">
+          <li class="navbar-button" data-active>
+            <a class="navbar-button-text flex-row" href="/index.html">Home</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/jackets.html"
+              >Jackets</a
+            >
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/about.html">About</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <footer>
-      <div class="footer-container">
-        <div class="footer-container-info">
-          <div class="footer-help footer-box">
+      <div class="footer-container flex-col">
+        <div class="footer-container-info flex-row">
+          <div class="footer-help footer-box flex-col">
             <h2 class="footer-title">Hjelp og kontakt</h2>
-            <ul class="footer-info-list">
+            <ul class="footer-info-list flex-col">
               <li>Bestilling</li>
               <li>Fakturabetaling</li>
               <li>Hvordan returnerer jeg en vare?</li>
               <li>Registrer deg som kunde</li>
             </ul>
           </div>
-          <div class="footer-payment footer-box">
+          <div class="footer-payment footer-box flex-col">
             <h2 class="footer-title">Payment</h2>
-            <ul class="footer-info-list">
+            <ul class="footer-info-list flex-col">
               <li>Mastercard</li>
               <li>Visa</li>
               <li>Paypal</li>
               <li>Vipps</li>
             </ul>
           </div>
-          <div class="footer-about footer-box">
+          <div class="footer-about footer-box flex-col">
             <h2 class="footer-title">Om Rainydays</h2>
-            <ul class="footer-info-list">
+            <ul class="footer-info-list flex-col">
               <li>Corporate website</li>
               <li>Ledige stillinger</li>
               <li>Presse</li>
@@ -43,7 +95,7 @@
             </ul>
           </div>
         </div>
-        <div class="footer-contact-info">
+        <div class="footer-contact-info flex-row">
           <div class="footer-email">Rainydays-dummy@rainydays.no</div>
           <div class="footer-address">Rainydays 48, Oslo, Norway</div>
           <div class="footer-newsletter">
