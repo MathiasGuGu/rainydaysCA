@@ -36,7 +36,6 @@ body {
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 	background-color: var(--navbar-light-blue);
-
 }
 
 .flex-col {
@@ -69,8 +68,6 @@ body {
 	height: 80%;
 }
 
-
-
 .navbar-mobile {
 	width: 100vw;
 	height: 95px;
@@ -85,7 +82,6 @@ body {
 	display: none;
 	align-items: center;
 	justify-content: center;
-
 }
 
 .navbar-buttons {
@@ -114,7 +110,6 @@ body {
 	height: 100%;
 	transition: all 0.3s linear;
 	background-color: #00000010;
-
 }
 
 .navbar-button:hover::before {
@@ -176,7 +171,9 @@ body {
 	background-clip: border-box;
 }
 
-.header-image > * {color: white;}
+.header-image > * {
+	color: white;
+}
 
 .content-section {
 }
@@ -187,8 +184,14 @@ body {
 
 	height: 150px;
 
-	background: rgb(2,0,36);
-	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(65,158,191,1) 0%, rgba(3,141,208,1) 27%, rgba(0,212,255,1) 63%);
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(65, 158, 191, 1) 0%,
+		rgba(3, 141, 208, 1) 27%,
+		rgba(0, 212, 255, 1) 63%
+	);
 	color: white;
 }
 
@@ -250,12 +253,10 @@ body {
 
 /* jacket selection section */
 
-
-
 .selection-list {
 	width: 100vw;
 	padding: 25px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
 	gap: 35px;
 }
 
@@ -264,7 +265,6 @@ body {
 	height: 100%;
 	flex-wrap: wrap;
 	gap: 20px;
-
 }
 
 .card-container {
@@ -286,8 +286,6 @@ body {
 	background-color: var(--navbar-light-blue);
 	box-shadow: 1px 1px 15px 1px #00000010;
 }
-
-
 
 .image-container {
 	background-color: white;
@@ -314,24 +312,22 @@ body {
 	width: 250px;
 }
 
-@media  screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
 	.selection-card-container {
 		gap: 5px;
-
 	}
 	.card-container {
 		max-width: calc(100% / 2 - 5px);
 		min-width: calc(100% / 2 - 20px);
 		height: auto;
 		margin-bottom: 20px;
-	}	
+	}
 
 	.image-container {
 		width: 100%;
 		height: fit-content;
 	}
 	.image-container-image {
-
 	}
 	.card-info-container {
 		width: 100%;
@@ -339,7 +335,6 @@ body {
 		border: 1px solid black;
 	}
 }
-
 
 /* go to top button */
 /* pga ingen JS så er den alltid synlig */
