@@ -480,8 +480,8 @@ body {
 
 	position: relative;
 
-	min-width: 250px;
-	max-width: 300px;
+	min-width: 220px;
+	max-width: 260px;
 	height: calc(100vh / 3 - 15px);
 	box-shadow: 1px 1px 10px 1px #00000015;
 
@@ -494,6 +494,7 @@ body {
 
 .jacket-favourite {
 	position: absolute;
+	z-index: 10;
 	top: 10px;
 	left: 10px;
 	width: 40px;
@@ -507,6 +508,7 @@ body {
 }
 
 .jacket-image-container {
+	position: inherit;
 	height: 60%;
 	width: 100%;
 	border-top-left-radius: 4px;
@@ -555,4 +557,21 @@ body {
 	cursor: pointer;
 	transition: all 0.2s linear;
 }
+.jacket-color-selector-list {
+	position: absolute;
+	gap: 10px;
+	bottom: 10px;
+	left: 1rem;
+}
+.jacket-color-selector {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	outline: 2px solid var(--dark-blue);
+	outline-offset: 2px;
+}
 
+.jacket-color-selector[data-selected ] {
+	outline: 2px solid white;
+	outline-offset: 2px;
+}
