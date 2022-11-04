@@ -471,24 +471,33 @@ body {
 	border-radius: 4px;
 
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
-
 	gap: 3px;
 }
 
 .jacket-card-container {
-	width: calc(100vw / 4 - );
 	min-width: 250px;
 	max-width: 300px;
 	height: calc(100vh / 3 - 15px);
 
 	border: 3px solid var(--dark-green);
 	border-radius: 4px;
+	margin-inline: auto;
+}
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+.jacket-image-container {
+	height: 50%;
+	width: 100%;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	background-color: white;
+}
 
+.jacket-info-container {
+	height: 50%;
+	width: 100%;
+
+	padding: 1rem;
+
+	border: 1px solid red;
 }
