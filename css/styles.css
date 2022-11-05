@@ -505,6 +505,7 @@ body {
 
 	display: flex;
 	align-items: center;
+	justify-content: center;
 
 	padding: 2rem;
 }
@@ -525,9 +526,9 @@ body {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 400px) {
 	.jacket-list-container {
-		min-width: 100%;
+		width: 100%;
 		align-items: center;
 		justify-content: center;
 		padding: none;
@@ -535,8 +536,8 @@ body {
 	.jacket-card-container {
 		min-width: none;
 		max-width: none;
-		width: 40%;
 		border: 1px solid yellow;
+		height: auto;
 	}
 }
 
