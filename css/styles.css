@@ -470,7 +470,7 @@ body {
 }
 
 .jacket-view-container {
-	width: 95%;
+	width: 95vw;
 	max-width: 1380px;
 	height: auto;
 	min-height: calc(100vh - 200px);
@@ -478,11 +478,37 @@ body {
 
 	border-radius: 4px;
 
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.jacket-list-container {
+	height: 100vh;
+	width: min-content;
+	min-width: 66%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 10px;
-	padding: 1rem;
+	gap: 6px;
+
+	border: 1px solid red;
+
+	max-width: 1380px;
+	height: auto;
+	min-height: calc(100vh - 200px);
+	background-color: var(--navbar-light-blue);
+
+	border-radius: 4px;
+
+
+	display: flex;
+	align-items: center;
+
+	padding: 2rem;
 }
+
 
 .jacket-card-container {
 
@@ -494,10 +520,24 @@ body {
 	box-shadow: 1px 1px 10px 1px #00000015;
 
 	border-radius: 4px;
-	margin-inline: auto;
 
 	color: var(--dark-blue);
 	text-decoration: none;
+}
+
+@media screen and (max-width: 840px) {
+	.jacket-list-container {
+		min-width: 100%;
+		align-items: center;
+		justify-content: center;
+		padding: none;
+	}	
+	.jacket-card-container {
+		min-width: none;
+		max-width: none;
+		width: 40%;
+		border: 1px solid yellow;
+	}
 }
 
 .jacket-favourite {
