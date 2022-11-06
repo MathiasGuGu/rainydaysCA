@@ -493,7 +493,6 @@ body {
 	flex-wrap: wrap;
 	gap: 6px;
 
-	border: 1px solid red;
 
 	max-width: 1380px;
 	height: auto;
@@ -526,7 +525,7 @@ body {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
 	.jacket-list-container {
 		width: 100%;
 		align-items: center;
@@ -534,9 +533,34 @@ body {
 		padding: none;
 	}	
 	.jacket-card-container {
-		min-width: none;
-		max-width: none;
-		border: 1px solid yellow;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.jacket-list-container {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}	
+	.jacket-card-container {
+		height: 100px;
+		min-width: 140px;
+		width: calc(100% / 2 - 20px);
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 371px) {
+	.jacket-list-container {
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}	
+	.jacket-card-container {
+		height: 100px;
+		min-width: 80%;
+		width: calc(100% / 2 - 20px);
 		height: auto;
 	}
 }
