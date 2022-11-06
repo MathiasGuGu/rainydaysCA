@@ -488,7 +488,7 @@ body {
 .jacket-list-container {
 	height: 100vh;
 	width: min-content;
-	min-width: 66%;
+	min-width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 6px;
@@ -537,7 +537,7 @@ body {
 	}
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 630px) {
 	.jacket-list-container {
 		width: 100%;
 		align-items: center;
@@ -559,7 +559,7 @@ body {
 	}	
 	.jacket-card-container {
 		height: 100px;
-		min-width: 80%;
+		min-width: 100%;
 		width: calc(100% / 2 - 20px);
 		height: auto;
 	}
