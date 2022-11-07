@@ -478,7 +478,6 @@ body {
 
 .jacket-view-container {
 	width: 80%;
-	border: 1px solid red;
 
 	border-radius: 2px;
 	background-color: var(--navbar-light-blue);

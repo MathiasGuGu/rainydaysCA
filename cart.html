@@ -1,15 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <title>Cart - Rainydays</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<title>Cart - Rainydays</title>
+	</head>
 
-  <body></body>
+	<body>
+		<header id="top">
+			<nav class="navbar-container flex-row">
+				<div class="navbar-logo flex-row">
+					<img
+						src="./public/RainyDays_Logo.png"
+						alt="Rainydays logo"
+					/>
+				</div>
+
+				<ul class="navbar-buttons flex-row">
+					<li class="navbar-button" data-active>
+						<a class="navbar-button-text flex-row" href="/">Home</a>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/jackets.html"
+							>Jackets</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/about.html"
+							>About</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/contact.html"
+							>Contact</a
+						>
+					</li>
+				</ul>
+				<div class="navbar-cart">
+					<a href="/cart.html"
+						><i class="fa-solid fa-cart-shopping"></i
+					></a>
+				</div>
+			</nav>
+			<nav class="navbar-mobile flex-row">
+				<div class="navbar-mobile-icons">
+					<div class="navbar-logo flex-row">
+						<img src="./public/RainyDays_Logo.png" alt="" />
+					</div>
+					<div class="navbar-cart">
+						<a href="/cart.html"
+							><i class="fa-solid fa-cart-shopping"></i
+						></a>
+					</div>
+				</div>
+				<ul class="navbar-buttons flex-row">
+					<li class="navbar-button" data-active>
+						<a
+							class="navbar-button-text flex-row"
+							href="/index.html"
+							>Home</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/jackets.html"
+							>Jackets</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/about.html"
+							>About</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/contact.html"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="cart-sum-container">
+			<div class="cart-items-container"></div>
+			<div class="cart-price-container"></div>
+		</div>
+		<div class="cart-choices-container">
+			<form class="cart-inputs-container">
+				<label for="name"></label>
+				<input type="text" class="" id="name" />
+				<label for="email"></label>
+				<input type="text" class="" id="email" />
+				<label for="addresse"></label>
+				<input type="text" class="" id="addresse" />
+				<label for="postal"></label>
+				<input type="text" class="" id="postal" />
+				<div>
+					<input type="checkbox" name="" id="" />
+					<span>I agree to the terms of service</span>
+				</div>
+				<div>
+					<input type="checkbox" name="" id="" />
+					<span>Do not send me email updates</span>
+				</div>
+				<div class="cart-payment-buttons">
+					<button class="cart-pay-card-button">Pay with card</button>
+					<button class="cart-pay-vipps-button">
+						Pay with Vipps
+					</button>
+				</div>
+			</form>
+		</div>
+	</body>
 </html>

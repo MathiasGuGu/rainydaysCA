@@ -1,341 +1,430 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jackets</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Jackets</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
 
-    <link rel="stylesheet" href="../css/styles.css" />
-  </head>
-  <body>
-    <header id="top">
-      <nav class="navbar-container flex-row">
-        <div class="navbar-logo flex-row">
-          <img src="./public/RainyDays_Logo.png" alt="Rainydays logo" />
-        </div>
+		<link rel="stylesheet" href="../css/styles.css" />
+	</head>
+	<body>
+		<header id="top">
+			<nav class="navbar-container flex-row">
+				<div class="navbar-logo flex-row">
+					<img
+						src="./public/RainyDays_Logo.png"
+						alt="Rainydays logo"
+					/>
+				</div>
 
-        <ul class="navbar-buttons flex-row">
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/">Home</a>
-          </li>
-          <li class="navbar-button" data-active>
-            <a class="navbar-button-text flex-row" href="/jackets.html"
-              >Jackets</a
-            >
-          </li>
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/about.html">About</a>
-          </li>
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/contact.html"
-              >Contact</a
-            >
-          </li>
-        </ul>
-        <div class="navbar-cart"><i class="fa-solid fa-cart-shopping"></i></div>
-      </nav>
-      <nav class="navbar-mobile flex-row">
-        <div class="navbar-mobile-icons">
-          <div class="navbar-logo flex-row">
-            <img src="./public/RainyDays_Logo.png" alt="" />
-          </div>
-          <div class="navbar-cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-          </div>
-        </div>
-        <ul class="navbar-buttons flex-row">
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/index.html">Home</a>
-          </li>
-          <li class="navbar-button" data-active>
-            <a class="navbar-button-text flex-row" href="/jackets.html"
-              >Jackets</a
-            >
-          </li>
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/about.html">About</a>
-          </li>
-          <li class="navbar-button">
-            <a class="navbar-button-text flex-row" href="/contact.html"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main id="jacket-main-content">
-      <!--
+				<ul class="navbar-buttons flex-row">
+					<li class="navbar-button">
+						<a class="navbar-button-text flex-row" href="/">Home</a>
+					</li>
+					<li class="navbar-button" data-active>
+						<a
+							class="navbar-button-text flex-row"
+							href="/jackets.html"
+							>Jackets</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/about.html"
+							>About</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/contact.html"
+							>Contact</a
+						>
+					</li>
+				</ul>
+				<div class="navbar-cart">
+					<i class="fa-solid fa-cart-shopping"></i>
+				</div>
+			</nav>
+			<nav class="navbar-mobile flex-row">
+				<div class="navbar-mobile-icons">
+					<div class="navbar-logo flex-row">
+						<img src="./public/RainyDays_Logo.png" alt="" />
+					</div>
+					<div class="navbar-cart">
+						<i class="fa-solid fa-cart-shopping"></i>
+					</div>
+				</div>
+				<ul class="navbar-buttons flex-row">
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/index.html"
+							>Home</a
+						>
+					</li>
+					<li class="navbar-button" data-active>
+						<a
+							class="navbar-button-text flex-row"
+							href="/jackets.html"
+							>Jackets</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/about.html"
+							>About</a
+						>
+					</li>
+					<li class="navbar-button">
+						<a
+							class="navbar-button-text flex-row"
+							href="/contact.html"
+							>Contact</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main id="jacket-main-content">
+			<!--
       <article class="jacket-sales-header">
         <h2>Get up to 30% off as a rainydays member</h2>
         <h4>use code: member2022</h4>
       </article>-->
-      <div class="jacket-filter-container"></div>
-      <div class="jacket-view-container flex-col">
-        <div class="jacket-list-container">
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-          <a class="jacket-card-container flex-col" href="/jacket.html">
-            <div class="jacket-favourite flex-row">
-              <i class="fa-sharp fa-regular fa-heart"></i>
-            </div>
-            <div class="jacket-image-container flex-row">
-              <img
-                src="./public/RainyDays_Jacket1.png"
-                class="image-container-image"
-              />
-              <div class="flex-row jacket-color-selector-list">
-                <span class="red jacket-color-selector" data-selected></span>
-                <span class="green jacket-color-selector"></span>
-                <span class="blue jacket-color-selector"></span>
-              </div>
-            </div>
-            <div class="jacket-info-container">
-              <p class="jacket-info">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, ut.
-              </p>
-              <div class="flex-row jacket-cart-container">
-                <h4 class="jacket-price">1499 NOK</h4>
-                <button class="cart-button">Add to cart</button>
-              </div>
-            </div>
-          </a>
-        </div>
-        <button class="">View More</button>
-      </div>
-    </main>
-    <footer>
-      <div class="footer-container flex-col">
-        <div class="footer-container-info flex-row">
-          <div class="footer-help footer-box flex-col">
-            <h2 class="footer-title">Hjelp og kontakt</h2>
-            <ul class="footer-info-list flex-col">
-              <li>Bestilling</li>
-              <li>Fakturabetaling</li>
-              <li>Hvordan returnerer jeg en vare?</li>
-              <li>Registrer deg som kunde</li>
-            </ul>
-          </div>
-          <div class="footer-payment footer-box flex-col">
-            <h2 class="footer-title">Payment</h2>
-            <ul class="footer-info-list flex-col">
-              <li>Mastercard</li>
-              <li>Visa</li>
-              <li>Paypal</li>
-              <li>Vipps</li>
-            </ul>
-          </div>
-          <div class="footer-about footer-box flex-col">
-            <h2 class="footer-title">Om Rainydays</h2>
-            <ul class="footer-info-list flex-col">
-              <li>Corporate website</li>
-              <li>Ledige stillinger</li>
-              <li>Presse</li>
-              <li>Investor relations</li>
-            </ul>
-          </div>
-        </div>
-        <div class="footer-contact-info flex-row">
-          <div class="footer-email">Rainydays-dummy@rainydays.no</div>
-          <div class="footer-address">Rainydays 48, Oslo, Norway</div>
-          <div class="footer-newsletter">
-            <form>
-              <label for="newsletter"></label>
-              <button value="submit">submit</button>
-              <input
-                type="text"
-                id="newsletter"
-                placeholder="Subscribe to our newsletter"
-              />
-            </form>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+			<div class="jacket-filter-container"></div>
+			<div class="jacket-view-container flex-col">
+				<div class="jacket-list-container">
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+					<a
+						class="jacket-card-container flex-col"
+						href="/jacket.html"
+					>
+						<div class="jacket-favourite flex-row">
+							<i class="fa-sharp fa-regular fa-heart"></i>
+						</div>
+						<div class="jacket-image-container flex-row">
+							<img
+								src="./public/RainyDays_Jacket1.png"
+								class="image-container-image"
+							/>
+							<div class="flex-row jacket-color-selector-list">
+								<span
+									class="red jacket-color-selector"
+									data-selected
+								></span>
+								<span
+									class="green jacket-color-selector"
+								></span>
+								<span class="blue jacket-color-selector"></span>
+							</div>
+						</div>
+						<div class="jacket-info-container">
+							<p class="jacket-info">
+								Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Aspernatur, ut.
+							</p>
+							<div class="flex-row jacket-cart-container">
+								<h4 class="jacket-price">1499 NOK</h4>
+								<button class="cart-button">Add to cart</button>
+							</div>
+						</div>
+					</a>
+				</div>
+				<button class="">View More</button>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container flex-col">
+				<div class="footer-container-info flex-row">
+					<div class="footer-help footer-box flex-col">
+						<h2 class="footer-title">Hjelp og kontakt</h2>
+						<ul class="footer-info-list flex-col">
+							<li>Bestilling</li>
+							<li>Fakturabetaling</li>
+							<li>Hvordan returnerer jeg en vare?</li>
+							<li>Registrer deg som kunde</li>
+						</ul>
+					</div>
+					<div class="footer-payment footer-box flex-col">
+						<h2 class="footer-title">Payment</h2>
+						<ul class="footer-info-list flex-col">
+							<li>Mastercard</li>
+							<li>Visa</li>
+							<li>Paypal</li>
+							<li>Vipps</li>
+						</ul>
+					</div>
+					<div class="footer-about footer-box flex-col">
+						<h2 class="footer-title">Om Rainydays</h2>
+						<ul class="footer-info-list flex-col">
+							<li>Corporate website</li>
+							<li>Ledige stillinger</li>
+							<li>Presse</li>
+							<li>Investor relations</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-contact-info flex-row">
+					<div class="footer-email">Rainydays-dummy@rainydays.no</div>
+					<div class="footer-address">Rainydays 48, Oslo, Norway</div>
+					<div class="footer-newsletter">
+						<form>
+							<label for="newsletter"></label>
+							<button value="submit">submit</button>
+							<input
+								type="text"
+								id="newsletter"
+								placeholder="Subscribe to our newsletter"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>
