@@ -653,3 +653,33 @@ body {
 .cart-inputs-container {
 	align-items: flex-start;
 }
+.cart-inputs-container > input {
+	width: 80%;
+	height: 2.5rem;
+}
+
+.cart-inputs-container > input[type='checkbox'] {
+	background-color: red;
+}
+.cart-payment-buttons {
+	width: 80%;
+	height: 100px;
+	justify-content: flex-start;
+	gap: 25px;
+}
+.cart-pay-card-button {
+	width: 40%;
+	height: 50%;
+
+	border: none;
+	background-color: var(--dark-green);
+	color: var(--navbar-light-blue);
+}
+.cart-pay-vipps-button {
+	width: 40%;
+	height: 50%;
+
+	border: none;
+
+	background-color: var(--vipps-orange);
+}
