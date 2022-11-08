@@ -768,3 +768,56 @@ body {
 	background-color: var(--dark-blue);
 	color: var(--navbar-light-blue);
 }
+
+/* Contact page */
+
+.contact-main {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.contact-visuals-container {
+	width: 60vw;
+	height: 100vh;
+}
+
+.contact-form-container {
+	width: 40vw;
+	height: 100vh;
+	background-color: var(--dark-green);
+}
+
+.contact-form {
+	width: 60%;
+	height: 100%;
+
+	gap: 15px;
+}
+
+.contact-form > input {
+	height: 40px;
+	width: 100%;
+}
+
+.contact-form > button {
+	align-self: flex-end;
+	width: 30%;
+	height: 40px;
+	border: 2px solid white;
+	background-color: transparent;
+	color: white;
+	transition: all 0.2s linear;
+}
+
+.contact-form > button:hover {
+	scale: 1.02;
+	transition: all 0.2s linear;
+	cursor: pointer;
+}
+
+.contact-form > textarea {
+	width: 100%;
+	resize: vertical;
+	height: auto;
+	min-height: 200px;
+}
