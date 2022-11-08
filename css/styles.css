@@ -654,8 +654,22 @@ body {
 	border-left: 2px solid var(--dark-blue);
 
 	background-color: white;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
+.cart-image-container {
+	height: 100%;
+	width: 100px;
+	background-color: var(--dark-green);
+}
+
+.cart-info-container {
+	height: 100%;
+}
+
+.cart-price {
+}
 .cart-price-container {
 	justify-content: flex-start;
 
