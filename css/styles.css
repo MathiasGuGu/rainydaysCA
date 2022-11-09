@@ -849,3 +849,40 @@ body {
 		width: 90%;
 	}
 }
+
+/* About section */
+
+.about-main {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+.about-main > * {
+	border: 1px solid #00000010;
+}
+.about-visuals-container {
+	background-image: url('/public/people-working.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0ch;
+}
+.about-info-container {
+	display: flex;
+	flex-basis: auto;
+	background-color: var(--dark-green);
+}
+.about-map-container {
+	width: 50%;
+	padding: 2rem;
+}
+.about-map {
+	width: 80%;
+	height: 90%;
+	border: 1px solid #00000010;
+}
+.about-text {
+	padding: 2rem;
+	color: var(--navbar-light-blue);
+	width: 50%;
+}
