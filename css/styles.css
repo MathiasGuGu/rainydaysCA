@@ -779,6 +779,11 @@ body {
 .contact-visuals-container {
 	width: 60vw;
 	height: 100vh;
+
+	background-image: url('/public/contact-bg.jpg');
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .contact-form-container {
@@ -789,6 +794,8 @@ body {
 
 .contact-form {
 	width: 60%;
+	max-width: 550px;
+	min-width: 250px;
 	height: 100%;
 
 	gap: 15px;
@@ -797,6 +804,10 @@ body {
 .contact-form > input {
 	height: 40px;
 	width: 100%;
+	padding: 0.3rem 1rem;
+	border-radius: 2px;
+	border: none;
+	color: var(--dark-blue);
 }
 
 .contact-form > button {
@@ -817,7 +828,24 @@ body {
 
 .contact-form > textarea {
 	width: 100%;
+	border-radius: 2px;
+	border: none;
+	padding: 0.3rem 1rem;
+
 	resize: vertical;
 	height: auto;
 	min-height: 200px;
+}
+
+@media screen and (max-width: 810px) {
+	.contact-visuals-container {
+		display: none;
+	}
+	.contact-form-container {
+		width: 100%;
+	}
+
+	.contact-form {
+		width: 90%;
+	}
 }
