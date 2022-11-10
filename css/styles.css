@@ -853,36 +853,62 @@ body {
 /* About section */
 
 .about-main {
-	height: 100vh;
+	height: auto;
+	min-height: 100vh;
 	width: 100vw;
 	display: grid;
 	grid-template-rows: 1fr 2fr;
 }
 .about-main > * {
-	border: 1px solid #00000010;
 }
 .about-visuals-container {
 	background-image: url('/public/people-working.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0ch;
+	background-position: center;
 }
 .about-info-container {
 	display: flex;
-	flex-basis: auto;
+	align-items: center;
+	height: auto;
+	justify-content: space-evenly;
 	background-color: var(--dark-green);
 }
 .about-map-container {
 	width: 50%;
-	padding: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .about-map {
 	width: 80%;
-	height: 90%;
+	max-width: 450px;
+	aspect-ratio: 1 / 1;
 	border: 1px solid #00000010;
 }
 .about-text {
-	padding: 2rem;
 	color: var(--navbar-light-blue);
 	width: 50%;
+	height: 100%;
+	padding: 0rem 2rem;
+	display: flex;
+	align-items: flex-start;
+}
+
+@media screen and (max-width: 740px) {
+	.about-main {
+		height: auto;
+	}
+	.about-info-container {
+		flex-direction: column-reverse;
+		flex: 1;
+		padding: 2rem 0rem;
+	}
+	.about-text {
+		width: 80%;
+		padding: 0rem 0rem 2rem 0rem;
+	}
+	.about-map-container {
+		width: 70%;
+	}
 }
