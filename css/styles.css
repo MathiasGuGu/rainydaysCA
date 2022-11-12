@@ -61,6 +61,7 @@ body {
 }
 
 .navbar-container {
+	z-index: 999;
 	max-width: 100vw;
 	height: 65px;
 	background-color: var(--navbar-light-blue);
