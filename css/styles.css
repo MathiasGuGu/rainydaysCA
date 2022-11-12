@@ -80,7 +80,7 @@ body {
 
 .navbar-mobile {
 	width: 100vw;
-	height: 125px;
+	height: 155px;
 	background-color: var(--navbar-light-blue);
 	display: none;
 	flex-direction: column;
@@ -97,6 +97,7 @@ body {
 .navbar-buttons {
 	list-style: none;
 	width: 100vw;
+	height: 50%;
 	margin: 0%;
 	padding: 0%;
 	justify-content: space-evenly;
@@ -158,7 +159,7 @@ body {
 
 	.navbar-mobile {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 	}
 
 	.navbar-mobile-icons {
@@ -919,7 +920,7 @@ body {
 	min-height: 100vh;
 	width: 100vw;
 	display: grid;
-	grid-template-rows: 1fr 2fr;
+	grid-template-rows: 1fr 5fr;
 }
 .about-main > * {
 }
@@ -928,6 +929,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	max-height: 300px;
 }
 .about-info-container {
 	display: flex;
