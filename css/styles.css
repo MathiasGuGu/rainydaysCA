@@ -1045,9 +1045,26 @@ body {
 	height: 3rem;
 	border-radius: 50%;
 }
+.circle-checkbox:hover {
+	cursor: pointer;
+}
+.circle-checkbox:checked {
+	outline: 3px solid var(--dark-blue);
+	outline-offset: 2px;
+}
 
 .square-checkbox {
+	transition: all 200ms linear;
+	outline: 0px solid var(--dark-blue);
+	outline-offset: 0px;
 	width: 5rem;
 	height: 2rem;
 	background-color: white;
+}
+
+.square-checkbox:hover {
+	transition: all 100ms linear;
+	cursor: pointer;
+	outline: 2px solid var(--dark-blue);
+	outline-offset: 2px;
 }
