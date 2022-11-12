@@ -619,6 +619,9 @@ body {
 }
 
 /* cart */
+.cart-main-container {
+}
+
 .cart-sum-container {
 	width: 60vw;
 	height: 100vh;
@@ -626,6 +629,7 @@ body {
 .cart-items-container {
 	height: 70%;
 	width: 100%;
+	border: 1px solid red;
 	gap: 10px;
 	padding-top: 10px;
 	justify-content: flex-start;
@@ -697,7 +701,6 @@ body {
 }
 
 .cart-inputs-container > input[type='checkbox'] {
-	background-color: red;
 }
 .cart-payment-buttons {
 	width: 80%;
@@ -751,6 +754,31 @@ body {
 .cart-proceed-button {
 	background-color: var(--dark-blue);
 	color: var(--navbar-light-blue);
+}
+
+@media screen and (max-width: 830px) {
+	.cart-sum-container {
+		width: 100vw;
+	}
+	.cart-main-container {
+		flex-direction: column;
+	}
+	.cart-choices-container {
+		width: 100vw;
+		height: fit-content;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.cart-inputs-container {
+		justify-content: center;
+		align-items: center;
+		width: 80vw;
+		border: 1px solid red;
+	}
+	.cart-inputs-container > input {
+		width: 100%;
+	}
 }
 
 /* Contact page */
@@ -896,4 +924,130 @@ body {
 	.about-map-container {
 		width: 70%;
 	}
+}
+
+/* Specific jackets page */
+.specjack-main-container {
+	height: 100vh;
+	width: 100vw;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	padding: 0rem 3rem;
+}
+
+.specjack-visuals-container {
+	align-items: flex-start;
+	width: 100%;
+	height: 100%;
+}
+
+.specjack-image-container {
+	height: 100%;
+	aspect-ratio: 1/1;
+
+	display: flex;
+
+	position: relative;
+}
+
+.specjack-image-container > img {
+	width: 60%;
+}
+
+.jacket-image-showcase {
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	width: 100%;
+	height: 15%;
+	gap: 20px;
+}
+.jacket-image-showcase-img {
+	width: calc(100% / 7);
+	height: 90%;
+	border-radius: 2px;
+	z-index: 100;
+	box-shadow: 1px 1px 10px 1px #00000015;
+}
+
+.jacket-image-showcase-img > img {
+	width: 90%;
+	transition: all 200ms linear;
+}
+
+.jacket-image-showcase-img > img:hover {
+	scale: 1.05;
+	transition: all 200ms linear;
+}
+
+.specjack-details-container {
+	width: 70%;
+	height: 100%;
+
+	padding: 2rem;
+
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.specjack-choice-container {
+	width: 100%;
+	height: 50%;
+}
+
+.specjack-choice-specifications {
+	position: relative;
+	align-items: flex-start;
+	width: 100%;
+	height: auto;
+	gap: 20px;
+}
+
+.specjack-choice-btn-container {
+	height: 40%;
+	width: 100%;
+	align-items: flex-start;
+}
+.specjack-choice-btn-container > a {
+	height: 3rem;
+	width: 6rem;
+	text-decoration: none;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+}
+.specjack-choice-colors {
+	width: 100%;
+	gap: 20px;
+	justify-content: flex-start;
+}
+
+.specjack-choice-sizes {
+	width: 100%;
+	gap: 10px;
+
+	justify-content: flex-start;
+}
+
+.specjack-choice-specifications input {
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+}
+.circle-checkbox {
+	position: relative;
+	font: inherit;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.square-checkbox {
+	width: 5rem;
+	height: 2rem;
+	background-color: white;
 }
