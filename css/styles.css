@@ -96,29 +96,24 @@ body {
 
 .navbar-buttons {
 	list-style: none;
-	width: 100vw;
-	height: 50%;
+	width: 40vw;
+	height: 100%;
 	margin: 0%;
 	padding: 0%;
-	justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 .navbar-button {
 	height: 100%;
-	width: calc(100% / 4 - 20px);
-}
-
-.navbar-button > a {
-	font-size: 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	width: calc(100% / 4);
 }
 
 .navbar-button-text::before {
 	content: '';
 	position: absolute;
 	width: 0px;
+	left: 0%;
+	top: 0%;
 	height: 100%;
 	transition: all 0.3s linear;
 	background-color: #00000010;
@@ -128,8 +123,8 @@ body {
 	content: '';
 	position: absolute;
 	cursor: pointer;
-	width: 100%;
 	height: 100%;
+	width: 100%;
 	background-color: #00000010;
 	transition: all 0.3s linear;
 }
@@ -137,10 +132,10 @@ body {
 .navbar-button-text {
 	color: var(--dark-blue);
 	text-decoration: none;
-	font-size: 1.2rem;
-	height: 100%;
+	font-size: 1rem;
+	position: relative;
 	width: 100%;
-	z-index: 999;
+	height: 100%;
 }
 
 [data-active]::after {
@@ -156,7 +151,9 @@ body {
 	.navbar-container {
 		display: none;
 	}
-
+	.navbar-buttons {
+		width: 100%;
+	}
 	.navbar-mobile {
 		display: flex;
 		justify-content: space-evenly;
