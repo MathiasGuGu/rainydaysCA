@@ -436,6 +436,21 @@ body {
 }
 
 .footer-newsletter {
+	height: 30px;
+}
+
+:is(.footer-newsletter) form {
+	height: 100%;
+	width: 100%;
+	gap: 0;
+}
+.footer-newsletter > * > input {
+	height: 100%;
+	border: none;
+}
+.footer-newsletter > * > button {
+	height: 100%;
+	border: none;
 	background-color: var(--vipps-orange);
 }
 
@@ -451,6 +466,11 @@ body {
 	.footer-container-info {
 		align-items: flex-start;
 		justify-content: space-between;
+	}
+
+	.footer-contact-info {
+		font-size: 0.9rem;
+		flex-direction: column;
 	}
 }
 
