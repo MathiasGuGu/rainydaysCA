@@ -70,8 +70,14 @@ body {
 }
 
 .navbar-logo {
-	width: fit-content;
 	height: 100%;
+	width: 60%;
+	border: 1px solid red;
+	z-index: 999;
+}
+
+.navbar-logo:hover {
+	cursor: pointer;
 }
 
 .navbar-logo > img {
@@ -434,6 +440,18 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+	.footer-title {
+		font-size: 0.8rem;
+	}
+	.footer-info-list {
+		font-size: 0.8rem;
+		display: flex;
+		align-items: flex-start;
+	}
+	.footer-container-info {
+		align-items: flex-start;
+		justify-content: space-between;
+	}
 }
 
 /* Jackets page */
@@ -449,20 +467,15 @@ body {
 	gap: 5px;
 }
 
-/*
 .jacket-sales-header {
 	width: 100vw;
 	height: 130px;
 	background-color: var(--dark-blue);
 	color: var(--navbar-light-blue);
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
 	margin-top: 5px;
 }
-*/
+
 .jacket-filter-container {
 	position: relative;
 	width: 90%;
@@ -845,6 +858,10 @@ body {
 	background-repeat: no-repeat;
 }
 
+.contact-title {
+	color: var(--navbar-light-blue);
+}
+
 .contact-form-container {
 	width: 40vw;
 	height: 100vh;
@@ -917,7 +934,7 @@ body {
 	min-height: 100vh;
 	width: 100vw;
 	display: grid;
-	grid-template-rows: 1fr 5fr;
+	grid-template-rows: 1fr 4fr;
 }
 .about-main > * {
 }
