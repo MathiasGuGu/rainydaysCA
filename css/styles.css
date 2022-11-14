@@ -1253,3 +1253,13 @@ body {
 
 
 /* Success page */
+#success-main {
+	text-align: center;
+	height: 100vh;
+	width: 100vw;
+	gap: 20px;
+}
+
+#success-main > i {
+	color: var(--success-green);
+}
