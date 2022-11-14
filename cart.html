@@ -19,9 +19,9 @@
   <body>
     <header id="top">
       <nav class="navbar-container flex-row">
-        <div class="navbar-logo flex-row">
+        <a href="/index.html" class="navbar-logo flex-row">
           <img src="./public/RainyDays_Logo.png" alt="Rainydays logo" />
-        </div>
+        </a>
 
         <ul class="navbar-buttons flex-row">
           <li class="navbar-button" data-active>
@@ -47,9 +47,9 @@
       </nav>
       <nav class="navbar-mobile flex-row">
         <div class="navbar-mobile-icons">
-          <div class="navbar-logo flex-row">
+          <a class="navbar-logo flex-row" href="/index.html">
             <img src="./public/RainyDays_Logo.png" alt="" />
-          </div>
+          </a>
           <div class="navbar-cart">
             <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
           </div>
@@ -152,8 +152,16 @@
               </button>
             </div>
             <div class="flex-row cart-proceed-container">
-              <a class="cart-back-button flex-row proceed-button">Go Back</a>
-              <a class="cart-proceed-button flex-row proceed-button">Proceed</a>
+              <a
+                class="cart-back-button flex-row proceed-button"
+                href="/jackets.html"
+                >Go Back</a
+              >
+              <a
+                class="cart-proceed-button flex-row proceed-button"
+                href="/success.html"
+                >Proceed</a
+              >
             </div>
           </form>
         </div>
