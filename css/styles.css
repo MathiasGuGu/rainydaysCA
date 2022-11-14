@@ -11,6 +11,10 @@
 	--notif-red: #d1495b;
 	--success-green: #6fbd63;
 	--font-read: 'Montserrat', sans-serif;
+	--border-thin: #00000010;
+	--border-weak : #00000015;
+	--border-medium: #00000025;
+	--border-strong: #00000045;
 }
 
 * {
@@ -121,7 +125,7 @@ body {
 	top: 0%;
 	height: 100%;
 	transition: all 0.3s linear;
-	background-color: #00000010;
+	background-color: var(--border-thin);
 }
 
 .navbar-button-text:hover::before {
@@ -130,7 +134,7 @@ body {
 	cursor: pointer;
 	height: 100%;
 	width: 100%;
-	background-color: #00000010;
+	background-color: var(--border-thin);
 	transition: all 0.3s linear;
 }
 
@@ -293,7 +297,7 @@ body {
 }
 
 .card-container:hover > * {
-	box-shadow: 1px 1px 10px 1px #00000015;
+	box-shadow: 1px 1px 10px 1px var(--border-weak);
 }
 
 .card-shopping-cart {
@@ -306,14 +310,14 @@ body {
 	color: var(--notif-red);
 	z-index: 5;
 	background-color: var(--navbar-light-blue);
-	box-shadow: 1px 1px 15px 1px #00000010;
+	box-shadow: 1px 1px 15px 1px var(--border-thin);
 }
 
 .image-container {
 	background-color: white;
 	max-width: 100%;
 	height: 300px;
-	border: 1px solid #00000015;
+	border: 1px solid var(--border-weak);
 	border-radius: 4px;
 }
 
@@ -510,7 +514,7 @@ body {
 	justify-content: space-between;
 	padding-inline: 5rem;
 
-	border-bottom: 1px solid #00000025;
+	border-bottom: 1px solid var(--border-medium);
 	border-radius: 2px;
 
 	margin-top: 20px;
@@ -593,7 +597,7 @@ body {
 	width: 40px;
 	height: 40px;
 
-	box-shadow: 1px 1px 10px 1px #00000015;
+	box-shadow: 1px 1px 10px 1px var(--border-weak);
 
 	border-radius: 50%;
 	background-color: white;
@@ -716,7 +720,7 @@ body {
 	width: 90%;
 	height: calc(100% / 5);
 
-	border: 1px solid #00000015;
+	border: 1px solid var(--border-weak);
 	border-left: 2px solid var(--dark-blue);
 
 	background-color: white;
@@ -802,7 +806,7 @@ body {
 .cart-inputs-container > input {
 	width: 80%;
 	height: 3rem;
-	border: 1px solid #00000015;
+	border: 1px solid var(--border-weak);
 }
 
 .cart-payment-buttons {
@@ -1016,7 +1020,7 @@ body {
 	width: 80%;
 	max-width: 450px;
 	aspect-ratio: 1 / 1;
-	border: 1px solid #00000010;
+	border: 1px solid var(--border-thin);
 }
 .about-text {
 	color: var(--navbar-light-blue);
@@ -1089,7 +1093,7 @@ body {
 	height: 90%;
 	border-radius: 2px;
 	z-index: 100;
-	box-shadow: 1px 1px 10px 1px #00000015;
+	box-shadow: 1px 1px 10px 1px var(--border-weak);
 }
 
 .jacket-image-showcase-img > img {
