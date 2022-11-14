@@ -70,87 +70,91 @@
         </ul>
       </nav>
     </header>
-    <div class="flex-row cart-main-container">
-      <div class="cart-sum-container flex-col">
-        <div class="cart-items-container flex-col">
-          <div class="cart-item flex-row">
-            <div class="cart-image-container flex-row">
-              <img src="/public/RainyDays_Jacket2.png" />
-            </div>
-            <div class="cart-item-info-container flex-col">
-              <div class="cart-item-title flex-row">
-                <h3>Waterproof jacket</h3>
+    <main class="cart-main flex-row">
+      <div class="flex-row cart-main-container">
+        <div class="cart-sum-container flex-col">
+          <div class="cart-items-container flex-col">
+            <div class="cart-item flex-row">
+              <div class="cart-image-container flex-row">
+                <img src="/public/RainyDays_Jacket2.png" />
               </div>
-              <div class="cart-item-info flex-row">
-                <div class="flex-col cart-item-info-spec">
-                  <span>1x Medium</span>
-                  <span class="circle red"></span>
+              <div class="cart-item-info-container flex-col">
+                <div class="cart-item-title flex-row">
+                  <h3>Waterproof jacket</h3>
                 </div>
-                <h3>1390,-</h3>
+                <div class="cart-item-info flex-row">
+                  <div class="flex-col cart-item-info-spec">
+                    <span>1x Medium</span>
+                    <span class="circle red"></span>
+                  </div>
+                  <h3>1390,-</h3>
+                </div>
+              </div>
+            </div>
+            <div class="cart-item flex-row">
+              <div class="cart-image-container flex-row">
+                <img src="/public/RainyDays_Jacket2.png" />
+              </div>
+              <div class="cart-item-info-container flex-col">
+                <div class="cart-item-title flex-row">
+                  <h3>Waterproof jacket</h3>
+                </div>
+                <div class="cart-item-info flex-row">
+                  <div class="flex-col cart-item-info-spec">
+                    <span>1x Medium</span>
+                    <span class="circle red"></span>
+                  </div>
+                  <h3>1390,-</h3>
+                </div>
               </div>
             </div>
           </div>
-          <div class="cart-item flex-row">
-            <div class="cart-image-container flex-row">
-              <img src="/public/RainyDays_Jacket2.png" />
-            </div>
-            <div class="cart-item-info-container flex-col">
-              <div class="cart-item-title flex-row">
-                <h3>Waterproof jacket</h3>
-              </div>
-              <div class="cart-item-info flex-row">
-                <div class="flex-col cart-item-info-spec">
-                  <span>1x Medium</span>
-                  <span class="circle red"></span>
-                </div>
-                <h3>1390,-</h3>
+          <div class="cart-price-container flex-col">
+            <div class="cart-sum flex-col">
+              <div class="divider"></div>
+              <div class="flex-row cart-total-price">
+                <h3>Your total:</h3>
+                <h3>2780 NOK</h3>
               </div>
             </div>
           </div>
         </div>
-        <div class="cart-price-container flex-col">
-          <div class="cart-sum flex-col">
-            <div class="divider"></div>
-            <div class="flex-row cart-total-price">
-              <h3>Your total:</h3>
-              <h3>2780 NOK</h3>
+        <div class="cart-choices-container">
+          <form class="cart-inputs-container flex-col">
+            <label for="name">Name</label>
+            <input type="text" class="" id="name" />
+            <label for="email">Email</label>
+            <input type="email" class="" id="email" />
+            <label for="addresse">Address</label>
+            <input type="text" class="" id="addresse" />
+            <label for="postal">Postal</label>
+            <input type="text" class="" id="postal" />
+            <fieldset class="flex-col cart-fieldset">
+              <div class="flex-row">
+                <input type="checkbox" name="" id="terms-agree" />
+                <label for="terms-agree">I agree to the terms of service</label>
+              </div>
+              <div class="flex-row">
+                <input type="checkbox" name="" id="email-update" />
+                <label for="email-update">Do not send me email updates</label>
+              </div>
+            </fieldset>
+            <div class="cart-payment-buttons flex-row">
+              <button class="cart-pay-card-button payment-button">
+                Pay with card
+              </button>
+              <button class="cart-pay-vipps-button payment-button">
+                Pay with Vipps
+              </button>
             </div>
-          </div>
+            <div class="flex-row cart-proceed-container">
+              <a class="cart-back-button flex-row proceed-button">Go Back</a>
+              <a class="cart-proceed-button flex-row proceed-button">Proceed</a>
+            </div>
+          </form>
         </div>
       </div>
-      <div class="cart-choices-container">
-        <form class="cart-inputs-container flex-col">
-          <label for="name">Name</label>
-          <input type="text" class="" id="name" />
-          <label for="email">Email</label>
-          <input type="email" class="" id="email" />
-          <label for="addresse">Address</label>
-          <input type="text" class="" id="addresse" />
-          <label for="postal">Postal</label>
-          <input type="text" class="" id="postal" />
-          <div class="flex-row">
-            <input type="checkbox" name="" id="terms-agree" />
-            <label for="terms-agree">I agree to the terms of service</label>
-          </div>
-          <div class="flex-row">
-            <input type="checkbox" name="" id="email-update" />
-            <label for="email-update">Do not send me email updates</label>
-          </div>
-          <div class="cart-payment-buttons flex-row">
-            <button class="cart-pay-card-button payment-button">
-              Pay with card
-            </button>
-            <button class="cart-pay-vipps-button payment-button">
-              Pay with Vipps
-            </button>
-          </div>
-          <div class="flex-row cart-proceed-container">
-            <a class="cart-back-button flex-row proceed-button">Go Back</a>
-            <a class="cart-proceed-button flex-row proceed-button">Proceed</a>
-          </div>
-        </form>
-      </div>
-    </div>
+    </main>
     <footer>
       <div class="footer-container flex-col">
         <div class="footer-container-info flex-row">

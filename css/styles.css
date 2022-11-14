@@ -677,6 +677,15 @@ body {
 }
 
 /* cart */
+
+.cart-main {
+	justify-content: center;
+}
+
+.cart-main-container {
+	max-width: 1440px;
+}
+
 .cart-sum-container {
 	width: 60vw;
 	height: 100vh;
@@ -713,6 +722,11 @@ body {
 .cart-item-info-container {
 	height: 100%;
 	width: calc(100% - 100px);
+}
+
+.cart-fieldset {
+	border: none;
+	align-items: flex-start;
 }
 
 .cart-item-title {
