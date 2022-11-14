@@ -16,9 +16,13 @@
 	--border-medium: #00000025;
 	--border-strong: #00000045;
 }
+a {
+	text-decoration: none;
+}
 
 * {
 	box-sizing: border-box;
+
 }
 
 .red {
@@ -575,6 +579,7 @@ body {
 	position: relative;
 
 	height: auto;
+	width: auto;
 	max-width: 300px;
 	border-radius: 2px;
 
@@ -602,6 +607,7 @@ body {
 
 .jacket-image-container {
 	width: 100%;
+	height: 300px;
 	position: inherit;
 	border-top-left-radius: 2px;
 	border-top-right-radius: 2px;
@@ -609,7 +615,11 @@ body {
 }
 
 .jacket-image {
-	width: 90%;
+
+	width: auto;
+	height: auto;
+	min-width: 90%;
+	max-width: 90%;
 }
 
 .jacket-info-container {
@@ -635,6 +645,9 @@ body {
 	}
 }
 @media screen and (max-width: 680px) {
+	.jacket-image-container {
+		height: 200px;
+	}
 	.jacket-view-container {
 		width: 98%;
 	}
@@ -1048,14 +1061,11 @@ body {
 
 /* Specific jackets page */
 .specjack-main-container {
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
-	align-items: flex-start;
-	justify-content: flex-start;
 }
 
 .specjack-visuals-container {
-	align-items: flex-start;
 	width: 100%;
 	height: 100%;
 }
@@ -1111,18 +1121,16 @@ body {
 	padding: 2rem;
 
 	align-items: flex-start;
-	justify-content: flex-start;
 	gap: 20px;
 }
 
 .specjack-choice-container {
-	flex-basis: auto;
-	flex: 1;
 	gap: 10px;
 	width: 100%;
-	height: auto;
+	height: fit-content;
 
 	flex-wrap: wrap;
+
 }
 
 .specjack-choice-specifications {
@@ -1131,12 +1139,14 @@ body {
 	width: 100%;
 	height: auto;
 	gap: 20px;
+
 }
 
 .specjack-choice-btn-container {
 	height: 40%;
 	width: 100%;
 	align-items: flex-start;
+
 }
 .specjack-choice-btn-container > a {
 	margin-top: 20px;
@@ -1171,8 +1181,8 @@ body {
 .circle-checkbox {
 	position: relative;
 	font: inherit;
-	width: 3rem;
-	height: 3rem;
+	width: 2rem;
+	height: 2rem;
 	border-radius: 50%;
 }
 .circle-checkbox:hover {
