@@ -1,174 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Contact | Rainydays</title>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="../css/styles.css" />
-	</head>
-	<body>
-		<header id="top">
-			<nav class="navbar-container flex-row">
-				<div class="navbar-logo flex-row">
-					<img
-						src="./public/RainyDays_Logo.png"
-						alt="Rainydays logo"
-					/>
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Rainydays</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header id="top">
+      <nav class="navbar-container flex-row">
+        <div class="navbar-logo flex-row">
+          <img src="./public/RainyDays_Logo.png" alt="Rainydays logo" />
+        </div>
 
-				<ul class="navbar-buttons flex-row">
-					<li class="navbar-button" data-active>
-						<a class="navbar-button-text flex-row" href="/">Home</a>
-					</li>
-					<li class="navbar-button">
-						<a
-							class="navbar-button-text flex-row"
-							href="/jackets.html"
-							>Jackets</a
-						>
-					</li>
-					<li class="navbar-button">
-						<a
-							class="navbar-button-text flex-row"
-							href="/about.html"
-							>About</a
-						>
-					</li>
-					<li class="navbar-button">
-						<a
-							class="navbar-button-text flex-row"
-							href="/contact.html"
-							>Contact</a
-						>
-					</li>
-				</ul>
-				<div class="navbar-cart">
-					<a href="/cart.html"
-						><i class="fa-solid fa-cart-shopping"></i
-					></a>
-				</div>
-			</nav>
-			<nav class="navbar-mobile flex-row">
-				<div class="navbar-mobile-icons">
-					<div class="navbar-logo flex-row">
-						<img src="./public/RainyDays_Logo.png" alt="" />
-					</div>
-					<div class="navbar-cart">
-						<a href="/cart.html"
-							><i class="fa-solid fa-cart-shopping"></i
-						></a>
-					</div>
-				</div>
-				<ul class="navbar-buttons flex-row">
-					<li class="navbar-button flex-row" data-active>
-						<a
-							class="navbar-button-text flex-row"
-							href="/index.html"
-							>Home</a
-						>
-					</li>
-					<li class="navbar-button flex-row">
-						<a
-							class="navbar-button-text flex-row"
-							href="/jackets.html"
-							>Jackets</a
-						>
-					</li>
-					<li class="navbar-button flex-row">
-						<a
-							class="navbar-button-text flex-row"
-							href="/about.html"
-							>About</a
-						>
-					</li>
-					<li class="navbar-button flex-row">
-						<a
-							class="navbar-button-text flex-row"
-							href="/contact.html"
-							>Contact</a
-						>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<main class="flex-row contact-main">
-			<div class="contact-visuals-container"></div>
-			<div class="contact-form-container flex-row">
-				<form action="" class="contact-form flex-col">
-					<h1 class="contact-title">Contact</h1>
-					<label for="name"></label>
-					<input type="text" id="name" placeholder="Your full name" />
-					<label for="name"></label>
-					<input
-						type="text"
-						id="name"
-						placeholder="Your email address"
-					/>
-					<label for="name"></label>
-					<select type="" id="name" placeholder="What topic?">
-						<option>About the jackets</option>
-						<option>Shipping</option>
-						<option>Jobs</option>
-						<option>Refunds</option>
-					</select>
-					<label for="name"></label>
-					<textarea
-						type="text"
-						id="name"
-						placeholder="What can we help you with?"
-					></textarea>
-					<button>Submit</button>
-				</form>
-			</div>
-		</main>
-		<footer>
-			<div class="footer-container flex-col">
-				<div class="footer-container-info flex-row">
-					<div class="footer-help footer-box flex-col">
-						<h2 class="footer-title">Hjelp og kontakt</h2>
-						<ul class="footer-info-list flex-col">
-							<li>Bestilling</li>
-							<li>Fakturabetaling</li>
-							<li>Hvordan returnerer jeg en vare?</li>
-							<li>Registrer deg som kunde</li>
-						</ul>
-					</div>
-					<div class="footer-payment footer-box flex-col">
-						<h2 class="footer-title">Payment</h2>
-						<ul class="footer-info-list flex-col">
-							<li>Mastercard</li>
-							<li>Visa</li>
-							<li>Paypal</li>
-							<li>Vipps</li>
-						</ul>
-					</div>
-					<div class="footer-about footer-box flex-col">
-						<h2 class="footer-title">Om Rainydays</h2>
-						<ul class="footer-info-list flex-col">
-							<li>Corporate website</li>
-							<li>Ledige stillinger</li>
-							<li>Presse</li>
-							<li>Investor relations</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-contact-info flex-row">
-					<div class="footer-email">Rainydays-dummy@rainydays.no</div>
-					<div class="footer-address">Rainydays 48, Oslo, Norway</div>
-					<form class="footer-newsletter flex-row">
-						<button value="submit">submit</button>
-						<input
-							type="text"
-							placeholder="Subscribe to our newsletter"
-						/>
-					</form>
-				</div>
-			</div>
-		</footer>
-	</body>
+        <ul class="navbar-buttons flex-row">
+          <li class="navbar-button" data-active>
+            <a class="navbar-button-text flex-row" href="/">Home</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/jackets.html"
+              >Jackets</a
+            >
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/about.html">About</a>
+          </li>
+          <li class="navbar-button">
+            <a class="navbar-button-text flex-row" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="navbar-cart">
+          <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </nav>
+      <nav class="navbar-mobile flex-row">
+        <div class="navbar-mobile-icons">
+          <div class="navbar-logo flex-row">
+            <img src="./public/RainyDays_Logo.png" alt="" />
+          </div>
+          <div class="navbar-cart">
+            <a href="/cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+        <ul class="navbar-buttons flex-row">
+          <li class="navbar-button flex-row" data-active>
+            <a class="navbar-button-text flex-row" href="/index.html">Home</a>
+          </li>
+          <li class="navbar-button flex-row">
+            <a class="navbar-button-text flex-row" href="/jackets.html"
+              >Jackets</a
+            >
+          </li>
+          <li class="navbar-button flex-row">
+            <a class="navbar-button-text flex-row" href="/about.html">About</a>
+          </li>
+          <li class="navbar-button flex-row">
+            <a class="navbar-button-text flex-row" href="/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-row contact-main">
+      <div class="contact-visuals-container"></div>
+      <div class="contact-form-container flex-row">
+        <form action="" class="contact-form flex-col">
+          <h1 class="contact-title">Contact</h1>
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Your full name" />
+          <label for="name"></label>
+          <input type="text" id="name" placeholder="Your email address" />
+          <label for="name"></label>
+          <select type="" id="name" placeholder="What topic?">
+            <option>About the jackets</option>
+            <option>Shipping</option>
+            <option>Jobs</option>
+            <option>Refunds</option>
+          </select>
+          <label for="name"></label>
+          <textarea
+            type="text"
+            id="name"
+            placeholder="What can we help you with?"
+          ></textarea>
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-container flex-col">
+        <div class="footer-container-info flex-row">
+          <div class="footer-help footer-box flex-col">
+            <h2 class="footer-title">Hjelp og kontakt</h2>
+            <ul class="footer-info-list flex-col">
+              <li>Bestilling</li>
+              <li>Fakturabetaling</li>
+              <li>Hvordan returnerer jeg en vare?</li>
+              <li>Registrer deg som kunde</li>
+            </ul>
+          </div>
+          <div class="footer-payment footer-box flex-col">
+            <h2 class="footer-title">Payment</h2>
+            <ul class="footer-info-list flex-col">
+              <li>Mastercard</li>
+              <li>Visa</li>
+              <li>Paypal</li>
+              <li>Vipps</li>
+            </ul>
+          </div>
+          <div class="footer-about footer-box flex-col">
+            <h2 class="footer-title">Om Rainydays</h2>
+            <ul class="footer-info-list flex-col">
+              <li>Corporate website</li>
+              <li>Ledige stillinger</li>
+              <li>Presse</li>
+              <li>Investor relations</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-contact-info flex-row">
+          <div class="footer-email">Rainydays-dummy@rainydays.no</div>
+          <div class="footer-address">Rainydays 48, Oslo, Norway</div>
+          <form class="footer-newsletter flex-row">
+            <button value="submit">submit</button>
+            <input type="text" placeholder="Subscribe to our newsletter" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -71,8 +71,7 @@ body {
 
 .navbar-logo {
 	height: 100%;
-	width: 60%;
-	border: 1px solid red;
+	width: 20%;
 	z-index: 999;
 }
 
@@ -954,11 +953,15 @@ body {
 	min-height: 100vh;
 	width: 100vw;
 	display: grid;
+	place-content: center;
 	grid-template-rows: 1fr 4fr;
 }
 .about-main > * {
+	
 }
 .about-visuals-container {
+	max-width: 1440px;
+
 	background-image: url('/public/people-working.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -966,6 +969,8 @@ body {
 	max-height: 300px;
 }
 .about-info-container {
+	max-width: 1440px;
+
 	display: flex;
 	align-items: center;
 	height: auto;
@@ -1200,3 +1205,6 @@ body {
 		min-width: none;
 	}
 }
+
+
+/* Success page */
