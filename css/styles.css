@@ -644,6 +644,16 @@ body {
 		width: calc(98vw / 2 - 20px);
 	}
 }
+@media screen and (max-width: 320px) {
+
+	.jacket-list-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.jacket-card-container {
+		width: calc(98vw);
+	}
+}
+
 
 .cart-button {
 	height: 3rem;
